@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lamborghini vs Ferrari </title>
+    <style>
+        .Ferrari-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .Lamborghini-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose which one is better</h1>
+    
+    <button class="Ferrari-button" onclick="Ferrari()">Ferrari</button>
+    <button class="Lamborghini-button" onclick="Lamborghini()">Lamborghini</button>
+
+    <p>Ferrari Votes: <span id="Ferrari-votes">0</span></p>
+    <p>Lamborghini Votes: <span id="Lamborghini-votes">0</span></p>
+
+    <script>
+        let ferrariVotes = 0;
+        let lamborghiniVotes = 0;
+
+        function Ferrari() {
+            ferrariVotes++;
+            document.getElementById('Ferrari-votes').innerText = ferrariVotes;
+        }
+
+        function Lamborghini() {
+            lamborghiniVotes++;
+            document.getElementById('Lamborghini-votes').innerText = lamborghiniVotes;
+        }
+    </script>
+</body>
+</html>
