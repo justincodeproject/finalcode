@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tesla  vs Edison </title>
+    <style>
+        .Tesla-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .Edison-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose which one is better</h1>
+    
+    <button class="Tesla-button" onclick="Tesla()">Tesla</button>
+    <button class="Edison-button" onclick="Edison()">Edison</button>
+
+    <p>Tesla Votes: <span id="Tesla-votes">0</span></p>
+    <p>Edison Votes: <span id="Edison-votes">0</span></p>
+
+    <script>
+        let TeslaVotes = 0;
+        let EdisonVotes = 0;
+
+        function Tesla() {
+            TeslaVotes++;
+            document.getElementById('Tesla-votes').innerText = TeslaVotes;
+        }
+
+        function Edison() {
+           EdisonVotes++;
+            document.getElementById('Edison-votes').innerText = EdisonVotes;
+        }
+    </script>
+</body>
+</html>
