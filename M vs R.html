@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messi vs Ronaldo </title>
+    <style>
+        .Ronaldo-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .Messi-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose which one is better</h1>
+    
+    <button class="Ronaldo-button" onclick="Ronaldo()">Ronaldo</button>
+    <button class="Messi-button" onclick="Messi()">Messi</button>
+
+    <p>Ronaldo Votes: <span id="Ronaldo-votes">0</span></p>
+    <p>Messi Votes: <span id="Messi-votes">0</span></p>
+
+    <script>
+        let RonaldoVotes = 0;
+        let MessiVotes = 0;
+
+        function Ronaldo() {
+            RonaldoVotes++;
+            document.getElementById('Ronaldo-votes').innerText = RonaldoVotes;
+        }
+
+        function Messi() {
+            MessiVotes++;
+            document.getElementById('Messi-votes').innerText = MessiVotes;
+        }
+    </script>
+</body>
+</html>
